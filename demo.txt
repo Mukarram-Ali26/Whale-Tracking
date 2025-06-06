@@ -1,0 +1,5 @@
+pages/ folder setup for true multi-page navigation.
+
+Improved database schema (e.g., add timestamps, wallet nicknames).
+
+Dockerfile or Streamlit Cloud deployment support.
