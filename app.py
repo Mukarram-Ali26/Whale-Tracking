@@ -27,7 +27,7 @@ a.wallet-link:hover { text-decoration: underline; }
 """, unsafe_allow_html=True)
 
 # MongoDB setup
-MONGO_URI = st.secrets("MONGO_URI", "mongodb+srv://tracker_user:password@cluster0.mongodb.net/?retryWrites=true&w=majority")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://tracker_user:password@cluster0.mongodb.net/?retryWrites=true&w=majority")
 client = MongoClient(MONGO_URI)
 db = client["hypertracker"]
 changes_collection = db["position_changes"]
